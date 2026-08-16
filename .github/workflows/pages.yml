@@ -1,0 +1,50 @@
+name: Deploy to GitHub Pages
+
+# build/ is gitignored, so Pages cannot serve it from the branch. This compiles
+# the wasm on a runner and publishes build/ as the Pages artifact instead.
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      # clang provides the wasm32 target; lld provides wasm-ld, which build.sh
+      # needs for -Wl,--no-entry and the --export flags.
+      - name: Install clang and wasm-ld
+        run: sudo apt-get update && sudo apt-get install -y clang lld
+
+      - name: Build
+        run: bash build.sh
+
+      - name: Check the wasm actually came out
+        run: test -s build/clay/index.wasm && ls -la build/clay
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: build
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

@@ -133,7 +133,7 @@ static const Project PROJECTS[] = {
         .title = CLAY_STRING_CONST("Personal Webpage in C"),
         .desc = CLAY_STRING_CONST("This page. Laid out by Clay in C and compiled to WebAssembly \xe2\x80\x94 no HTML markup, no CSS and no framework; the browser only ever receives rectangles and text."),
         .stack = CLAY_STRING_CONST("c \xc2\xb7 clay \xc2\xb7 wasm"),
-        .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/personal-webpage-in-C"),
+        .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/calvinKLyeung.github.io"),
         .thumb = CLAY_STRING_CONST("/clay/images/self_in_c.png"),
         .lang = LANG_C,
     },
@@ -599,7 +599,7 @@ void FooterBar() {
             .layout = { .padding = { 0, 0, 2, 2 } },
             .backgroundColor = T->bg,
             .border = { .width = { .bottom = 1 }, .color = Clay_Hovered() ? T->text : T->rule },
-            .userData = FrameAllocateCustomData((CustomHTMLData) { .link = CLAY_STRING("https://github.com/calvinKLyeung/personal-webpage-in-C"), .cursorPointer = true }),
+            .userData = FrameAllocateCustomData((CustomHTMLData) { .link = CLAY_STRING("https://github.com/calvinKLyeung/calvinKLyeung.github.io"), .cursorPointer = true }),
         }) {
             CLAY_TEXT(CLAY_STRING("Source"), CLAY_TEXT_CONFIG({
                 .fontSize = FS_SMALL, .fontId = FONT_ID_MONO,
