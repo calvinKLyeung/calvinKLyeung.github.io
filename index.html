@@ -281,7 +281,10 @@
         instance.exports.Clay_CreateArenaWithCapacityAndMemory(arenaStructAddress, memorySize, arenaMemoryAddress);
     }
     async function init() {
-        await Promise.all(fontsById.map(f => document.fonts.load(`12px "${f}"`)));
+        // allSettled, not all: Safari can reject fonts.load() with a NetworkError
+        // even when the font serves fine. A font that fails should degrade to a
+        // fallback face, not stop the wasm from ever being instantiated.
+        await Promise.allSettled(fontsById.map(f => document.fonts.load(`12px "${f}"`)));
         window.htmlRoot = document.body.appendChild(document.createElement('div'));
         window.canvasRoot = document.body.appendChild(document.createElement('canvas'));
         window.canvasContext = window.canvasRoot.getContext("2d");
