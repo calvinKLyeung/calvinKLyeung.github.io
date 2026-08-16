@@ -18,7 +18,7 @@ const uint32_t FONT_ID_MONO_SEMI = 1;
 #define FS_BODY  18 // 14px
 #define FS_META  16 // 13px
 #define FS_SMALL 15 // 12px
-#define FS_LABEL 14 // 11px
+#define FS_LABEL 17 // 13.6px - tab labels
 
 // -- Lamplight palette -- semantic tokens for both themes --
 typedef struct {
