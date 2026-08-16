@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preload" href="/clay/fonts/IBMPlexMono-Regular.ttf" as="font" type="font/ttf" crossorigin>
-    <link rel="preload" href="/clay/fonts/IBMPlexMono-SemiBold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="preload" href="/clay/fonts/IBMPlexMono-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/clay/fonts/IBMPlexMono-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
     <title>Calvin Yeung</title>
 
 
@@ -26,14 +26,16 @@
           font-family: 'PlexMono';
           font-style: normal;
           font-weight: 400;
-          src: url('/clay/fonts/IBMPlexMono-Regular.ttf') format('truetype');
+          src: url('/clay/fonts/IBMPlexMono-Regular.woff2') format('woff2'),
+               url('/clay/fonts/IBMPlexMono-Regular.ttf') format('truetype');
         }
 
         @font-face {
           font-family: 'PlexMonoSemi';
           font-style: normal;
           font-weight: 400;
-          src: url('/clay/fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
+          src: url('/clay/fonts/IBMPlexMono-SemiBold.woff2') format('woff2'),
+               url('/clay/fonts/IBMPlexMono-SemiBold.ttf') format('truetype');
         }
 
         body > canvas {
@@ -91,9 +93,12 @@
     let memoryDataView;
     let textDecoder = new TextDecoder("utf-8");
     let previousFrameTime;
+    // Fallbacks matter: without them a failed webfont drops to the browser
+    // default serif, which looks nothing like the design.
+    const MONO_FALLBACK = ', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace';
     let fontsById = [
-        'PlexMono',
-        'PlexMonoSemi',
+        'PlexMono' + MONO_FALLBACK,
+        'PlexMonoSemi' + MONO_FALLBACK,
     ];
     let elementCache = {};
     let imageCache = {};
@@ -387,9 +392,17 @@
                 },
             },
         };
-        const { instance } = await WebAssembly.instantiateStreaming(
-            fetch("/clay/index.wasm"), importObject
-        );
+        // Safari's instantiateStreaming fails on gzip-encoded responses, which is
+        // exactly how GitHub Pages serves the wasm. Keep the streaming fast path
+        // where it works and fall back to buffered instantiation where it does not.
+        const wasmResponse = await fetch("/clay/index.wasm");
+        let instantiated;
+        try {
+            instantiated = await WebAssembly.instantiateStreaming(wasmResponse.clone(), importObject);
+        } catch (streamingError) {
+            instantiated = await WebAssembly.instantiate(await wasmResponse.arrayBuffer(), importObject);
+        }
+        const { instance } = instantiated;
         memoryDataView = new DataView(new Uint8Array(instance.exports.memory.buffer).buffer);
         scratchSpaceAddress = instance.exports.__heap_base.value;
         let clayScratchSpaceAddress = instance.exports.__heap_base.value + 1024;
