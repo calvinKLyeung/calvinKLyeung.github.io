@@ -1,0 +1,6 @@
+# GitHub's Linguist treats .h as ambiguous and reads clay.h as C++ because of
+# its `extern "C"` / __cplusplus guards. At 303kb it then outweighs everything
+# else and mislabels the repo. Both files below are upstream Clay's, not this
+# project's code, so excluding them from the stats is also the honest answer.
+clay.h      linguist-vendored
+index.html  linguist-vendored
