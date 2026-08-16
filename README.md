@@ -1,5 +1,7 @@
 # personal-webpage-in-C
 
+**Access at → [calvinKLyeung.github.io](https://calvinKLyeung.github.io/)**
+
 A personal site written in C. No HTML markup, no CSS — the whole page is laid
 out in [Clay](https://github.com/nicbarker/clay), compiled to WebAssembly, and
 drawn by Clay's HTML renderer.
@@ -21,6 +23,14 @@ Everything lands in `build/`. It needs to be served over HTTP — opening
 ```sh
 cd build && python3 -m http.server 8000
 ```
+
+## Deploy
+
+`build/` is gitignored, so there is nothing for Pages to serve from the branch.
+`.github/workflows/pages.yml` compiles the wasm on a runner instead and
+publishes `build/` as the Pages artifact — every push to `main` redeploys.
+Because the repo is named `<user>.github.io`, the site is served at the domain
+root, which is what keeps the absolute `/clay/...` asset paths working.
 
 ## Layout
 
