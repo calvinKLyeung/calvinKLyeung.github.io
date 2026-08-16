@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+<rect width="480" height="300" fill="#FBF7EF"/>
+<rect x="0.5" y="0.5" width="479" height="299" fill="none" stroke="#0B2740" stroke-opacity="0.14" stroke-width="1"/>
+<text x="28.0" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#7A5217">typedef</text>
+<text x="95.2" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> </text>
+<text x="104.8" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#7A5217">struct</text>
+<text x="162.4" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> </text>
+<text x="172.0" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="239.2" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> </text>
+<text x="248.8" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="316.0" y="36.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">;</text>
+<text x="28.0" y="88.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#7A5217">struct</text>
+<text x="85.6" y="88.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> </text>
+<text x="95.2" y="88.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="162.4" y="88.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> {</text>
+<text x="28.0" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">    </text>
+<text x="66.4" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="133.6" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> *(*</text>
+<text x="172.0" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">render</text>
+<text x="229.6" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">)(</text>
+<text x="248.8" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="316.0" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> *</text>
+<text x="335.2" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#8C3F47">self</text>
+<text x="373.6" y="114.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">);</text>
+<text x="28.0" y="140.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">};</text>
+<text x="28.0" y="192.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#B07A2E">/* the page you are reading */</text>
+<text x="28.0" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="95.2" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> *</text>
+<text x="114.4" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">render</text>
+<text x="172.0" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">(</text>
+<text x="181.6" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#0B2740">Webpage</text>
+<text x="248.8" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> *</text>
+<text x="268.0" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#8C3F47">self</text>
+<text x="306.4" y="218.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">) {</text>
+<text x="28.0" y="244.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">    </text>
+<text x="66.4" y="244.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#7A5217">return</text>
+<text x="124.0" y="244.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86"> </text>
+<text x="133.6" y="244.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" font-weight="bold" fill="#8C3F47">self</text>
+<text x="172.0" y="244.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">;</text>
+<text x="28.0" y="270.0" xml:space="preserve" font-family="Courier,monospace" font-size="16" fill="#6E7F86">}</text>
+</svg>

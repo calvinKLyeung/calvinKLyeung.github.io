@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+<rect width="480" height="300" fill="white"/>
+<rect x="27" y="202" width="96" height="28" fill="none" stroke="black" stroke-width="1"/>
+<line x1="75" y1="202" x2="75" y2="230" stroke="black" stroke-width="1"/>
+<text x="51" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">5</text>
+<text x="99" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">7</text>
+<rect x="137" y="202" width="96" height="28" fill="none" stroke="black" stroke-width="1"/>
+<line x1="185" y1="202" x2="185" y2="230" stroke="black" stroke-width="1"/>
+<text x="161" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">11</text>
+<text x="209" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">19</text>
+<rect x="247" y="202" width="96" height="28" fill="none" stroke="black" stroke-width="1"/>
+<line x1="295" y1="202" x2="295" y2="230" stroke="black" stroke-width="1"/>
+<text x="271" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">29</text>
+<text x="319" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">37</text>
+<rect x="357" y="202" width="96" height="28" fill="none" stroke="black" stroke-width="1"/>
+<line x1="405" y1="202" x2="405" y2="230" stroke="black" stroke-width="1"/>
+<text x="381" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">41</text>
+<text x="429" y="221" text-anchor="middle" font-family="Times,serif" font-size="13">53</text>
+<rect x="106" y="114" width="48" height="28" fill="none" stroke="black" stroke-width="1"/>
+<text x="130" y="133" text-anchor="middle" font-family="Times,serif" font-size="14">11</text>
+<rect x="326" y="114" width="48" height="28" fill="none" stroke="black" stroke-width="1"/>
+<text x="350" y="133" text-anchor="middle" font-family="Times,serif" font-size="14">41</text>
+<rect x="216" y="26" width="48" height="28" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="45" text-anchor="middle" font-family="Times,serif" font-size="14">29</text>
+<path d="M216 54 L130 108" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="126,108 134,108 130,114" fill="black"/>
+<path d="M264 54 L350 108" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="346,108 354,108 350,114" fill="black"/>
+<path d="M106 142 L75 196" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="72,196 78,196 75,202" fill="black"/>
+<path d="M154 142 L185 196" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="182,196 188,196 185,202" fill="black"/>
+<path d="M326 142 L295 196" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="292,196 298,196 295,202" fill="black"/>
+<path d="M374 142 L405 196" fill="none" stroke="black" stroke-width="1"/>
+<polygon points="402,196 408,196 405,202" fill="black"/>
+<line x1="123" y1="216" x2="132" y2="216" stroke="black" stroke-width="1"/>
+<polygon points="132,212 132,220 137,216" fill="black"/>
+<line x1="233" y1="216" x2="242" y2="216" stroke="black" stroke-width="1"/>
+<polygon points="242,212 242,220 247,216" fill="black"/>
+<line x1="343" y1="216" x2="352" y2="216" stroke="black" stroke-width="1"/>
+<polygon points="352,212 352,220 357,216" fill="black"/>
+<text x="240.0" y="268" text-anchor="middle" font-family="Courier,monospace" font-size="12">leaves chained &#8594; ordered range scan</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+<rect width="480" height="300" fill="white"/>
+<rect x="115.0" y="19.0" width="250" height="30" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="39.5" text-anchor="middle" font-family="Times,serif" font-size="16">Racket source</text>
+<line x1="240" y1="49.0" x2="240" y2="71.0" stroke="black" stroke-width="1"/>
+<polygon points="236,70.5 244,70.5 240,77.0" fill="black"/>
+<text x="249" y="66.5" font-family="Courier,monospace" font-size="11">normalize</text>
+<rect x="115.0" y="77.0" width="250" height="30" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="97.5" text-anchor="middle" font-family="Times,serif" font-size="16">Core IR</text>
+<line x1="240" y1="107.0" x2="240" y2="129.0" stroke="black" stroke-width="1"/>
+<polygon points="236,128.5 244,128.5 240,135.0" fill="black"/>
+<text x="249" y="124.5" font-family="Courier,monospace" font-size="11">closure conversion</text>
+<rect x="115.0" y="135.0" width="250" height="30" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="155.5" text-anchor="middle" font-family="Times,serif" font-size="16">Closure IR</text>
+<line x1="240" y1="165.0" x2="240" y2="187.0" stroke="black" stroke-width="1"/>
+<polygon points="236,186.5 244,186.5 240,193.0" fill="black"/>
+<text x="249" y="182.5" font-family="Courier,monospace" font-size="11">specify representation</text>
+<rect x="115.0" y="193.0" width="250" height="30" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="213.5" text-anchor="middle" font-family="Times,serif" font-size="16">Imperative IR</text>
+<line x1="240" y1="223.0" x2="240" y2="245.0" stroke="black" stroke-width="1"/>
+<polygon points="236,244.5 244,244.5 240,251.0" fill="black"/>
+<text x="249" y="240.5" font-family="Courier,monospace" font-size="11">select + allocate registers</text>
+<rect x="115.0" y="251.0" width="250" height="30" fill="none" stroke="black" stroke-width="1"/>
+<text x="240" y="271.5" text-anchor="middle" font-family="Times,serif" font-size="16">x86-64</text>
+</svg>

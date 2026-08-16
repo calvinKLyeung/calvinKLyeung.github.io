@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300">
+<rect width="480" height="300" fill="white"/>
+<path d="M24 144.0 h66 l16 16 v88 h-82 z" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="90,144.0 90,160.0 106,160.0" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="35" y1="176.0" x2="95" y2="176.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="35" y1="188.0" x2="95" y2="188.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="35" y1="200.0" x2="95" y2="200.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="35" y1="212.0" x2="77" y2="212.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="118" y1="196" x2="172" y2="196" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<polygon points="171,191 171,201 180,196" fill="black"/>
+<rect x="187.3" y="164.8" width="105.3" height="85.8" rx="9.8" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M210.8 164.8 v-25.3 a29.2,29.2 0 0 1 58.5,0 v25.3" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="240.0" cy="200.8" r="8.2" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="240.0" y1="207.9" x2="240.0" y2="228.3" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="300" y1="196" x2="354" y2="196" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<polygon points="353,191 353,201 362,196" fill="black"/>
+<path d="M374 144.0 h66 l16 16 v88 h-82 z" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="440,144.0 440,160.0 456,160.0" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="385" y1="176.0" x2="445" y2="176.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="385" y1="188.0" x2="445" y2="188.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="385" y1="200.0" x2="445" y2="200.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<line x1="385" y1="212.0" x2="427" y2="212.0" stroke="black" stroke-width="2" stroke-linecap="round"/>
+<rect x="129.6" y="72.5" width="38.9" height="31.7" rx="3.6" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M138.1 72.5 v-14.4 a15.8,15.8 0 0 1 31.7,0 v3.6" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="149.0" cy="85.8" r="3.0" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="149.0" y1="88.4" x2="149.0" y2="95.9" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="149" y="132" text-anchor="middle" font-family="Courier,monospace" font-size="13">public (e,n)</text>
+<circle cx="312.0" cy="82.0" r="8.5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="320.6" y1="82.0" x2="353.8" y2="82.0" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="340.5" y1="82.0" x2="340.5" y2="90.5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<line x1="350.0" y1="82.0" x2="350.0" y2="90.5" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="331" y="132" text-anchor="middle" font-family="Courier,monospace" font-size="13">private (d,n)</text>
+</svg>
