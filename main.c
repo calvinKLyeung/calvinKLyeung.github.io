@@ -149,7 +149,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2025"),
         .title = CLAY_STRING_CONST("Racket Compiler"),
-        .desc = CLAY_STRING_CONST("A nanopass compiler lowering a subset of Racket to x86-64, with higher-order functions, lexical scoping, macros and dynamic type checking. Graph-coloring register allocation cut generated code 83% and ran 10x faster."),
+        .desc = CLAY_STRING_CONST("A nanopass compiler translating a subset of Racket to x86-64, with higher-order functions, lexical scoping, macros and dynamic type checking. Graph-coloring register allocation cut generated code 83% and ran 10x faster."),
         .stack = CLAY_STRING_CONST("Racket \xc2\xb7 x86-64 \xc2\xb7 RackUnit"),
         .thumb = CLAY_STRING_CONST("/clay/images/racket_compiler.png"),
         // no .url — closed source, so no repo link
@@ -239,7 +239,7 @@ typedef struct {
 
 static const Interest INTERESTS[] = {
     { .icon = CLAY_STRING_CONST("\xf0\x9f\x93\xb7"),
-      .text = CLAY_STRING_CONST("Walking cities with a camera \xe2\x80\x94 mostly Hong Kong, Japan, and Canada.") },
+      .text = CLAY_STRING_CONST("Walking around town with a camera \xe2\x80\x94 mostly Hong Kong, Japan, and Canada.") },
     { .icon = CLAY_STRING_CONST("\xf0\x9f\x8e\xb5"),
       .text = CLAY_STRING_CONST("Music with no discernible pattern: Cantopop, J-pop, classical, jazz, musicals, film scores.") },
     { .icon = CLAY_STRING_CONST("\xf0\x9f\x8e\xac"),
