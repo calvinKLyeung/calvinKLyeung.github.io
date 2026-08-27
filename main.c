@@ -148,7 +148,7 @@ static const Project PROJECTS[] = {
     },
     {
         .year = CLAY_STRING_CONST("2025"),
-        .title = CLAY_STRING_CONST("Racket Compiler"),
+        .title = CLAY_STRING_CONST("Racket-ish Compiler"),
         .desc = CLAY_STRING_CONST("A nanopass compiler translating a subset of Racket to x86-64, with higher-order functions, lexical scoping, macros and dynamic type checking. Graph-coloring register allocation cut generated code 83% and ran 10x faster."),
         .stack = CLAY_STRING_CONST("Racket \xc2\xb7 x86-64 \xc2\xb7 RackUnit"),
         .thumb = CLAY_STRING_CONST("/clay/images/racket_compiler.png"),
