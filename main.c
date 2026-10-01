@@ -130,6 +130,16 @@ typedef struct {
 static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2026"),
+        .title = CLAY_STRING_CONST("Paint & Guess Together"),
+        .desc = CLAY_STRING_CONST("A real-time shared pixel canvas with a team drawing game on top, where Claude prepares a word for each round to draw and guess. Every pixel travels over a hand-rolled binary WebSocket protocol, batched into 20 Hz ticks, with server processes synced over Redis pub/sub and every board rebuildable from an append-only event log."),
+        .stack = CLAY_STRING_CONST("TypeScript \xc2\xb7 Node.js \xc2\xb7 WebSocket \xc2\xb7 Redis \xc2\xb7 SQLite \xc2\xb7 Claude API \xc2\xb7 Docker"),
+        .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/pixel-canvas"),
+        .thumb = CLAY_STRING_CONST("/clay/images/pixel_canvas.png"),
+        .thumbAspect = 510.0f / 651.0f,
+        .lang = LANG_TYPESCRIPT,
+    },
+    {
+        .year = CLAY_STRING_CONST("2026"),
         .title = CLAY_STRING_CONST("Personal Webpage in C"),
         .desc = CLAY_STRING_CONST("This page. Laid out by Clay in C and compiled to WebAssembly \xe2\x80\x94 no HTML markup, no CSS and no framework; the browser only ever receives rectangles and text."),
         .stack = CLAY_STRING_CONST("c \xc2\xb7 clay \xc2\xb7 wasm"),
