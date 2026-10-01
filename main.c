@@ -223,7 +223,7 @@ static const Experience EXPERIENCE[] = {
     {
         .period = CLAY_STRING_CONST("May 2026 \xe2\x80\x93 Dec 2026"),
         .role = CLAY_STRING_CONST("Junior Developer, Co-op"),
-        .desc = CLAY_STRING_CONST("Maintained 1,880+ Java and Selenium regression tests across staging and production, and automated coverage for three storage integrations \xe2\x80\x94 saving 7 hours of manual testing per sprint and surfacing bugs a week earlier."),
+        .desc = CLAY_STRING_CONST("Maintained 1,880+ Java and Selenium regression tests across staging and production, and automated coverage for three storage integrations \xe2\x80\x94 saving 8 hours of manual testing per sprint and surfacing bugs a week earlier."),
         .org = CLAY_STRING_CONST("QA Automation, Jostle"),
         .logoDusk = CLAY_STRING_CONST("/clay/images/jostle_dusk.png"),
         .logoPaper = CLAY_STRING_CONST("/clay/images/jostle_paper.png"),
