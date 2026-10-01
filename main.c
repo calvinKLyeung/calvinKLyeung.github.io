@@ -230,7 +230,7 @@ static const Experience EXPERIENCE[] = {
         .logoAspect = 288.0f / 74.0f,
     },
     {
-        .period = CLAY_STRING_CONST("2019 \xe2\x80\x93 2023"),
+        .period = CLAY_STRING_CONST("Dec 2019 \xe2\x80\x93 Jul 2023"),
         .role = CLAY_STRING_CONST("Research Assistant"),
         .desc = CLAY_STRING_CONST("Built Python tooling that extracts text and images from historical newspapers using BERT and YOLO, and automated quality checks for fold marks, color accuracy and other scanning defects that improved digitization throughput 200%. Co-authored an IEEE PRAI 2023 paper on assembling photo albums from historical newspapers with computer vision."),
         .org = CLAY_STRING_CONST("Digital Initiatives, The Chinese University of Hong Kong Library"),
