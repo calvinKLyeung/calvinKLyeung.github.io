@@ -141,7 +141,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2026"),
         .title = CLAY_STRING_CONST("Personal Webpage in C"),
-        .desc = CLAY_STRING_CONST("This page. Laid out by Clay in C and compiled to WebAssembly \xe2\x80\x94 no HTML markup, no CSS and no framework; the browser only ever receives rectangles and text."),
+        .desc = CLAY_STRING_CONST("This page. Laid out by Clay in C and compiled to WebAssembly \xe2\x80\x94 no HTML markup, no CSS and no framework; the browser only ever receives rectangles and text. Built on Clay's official website example and redeployed to GitHub Pages by GitHub Actions on every push."),
         .stack = CLAY_STRING_CONST("c \xc2\xb7 clay \xc2\xb7 wasm"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/calvinKLyeung.github.io"),
         .thumb = CLAY_STRING_CONST("/clay/images/self_in_c.png"),
@@ -150,7 +150,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2026"),
         .title = CLAY_STRING_CONST("Christmas Tree Studio"),
-        .desc = CLAY_STRING_CONST("A programmable 3D Christmas tree whose lights you drive by writing Python in the browser \xe2\x80\x94 Three.js renders the scene, Pyodide runs the interpreter client-side."),
+        .desc = CLAY_STRING_CONST("A programmable 3D Christmas tree whose lights you drive by writing Python in the browser \xe2\x80\x94 Three.js renders the scene, Pyodide runs the interpreter client-side. Ships with 300 programmable lights, preset animations and demo scripts to start from."),
         .stack = CLAY_STRING_CONST("TypeScript \xc2\xb7 Three.js \xc2\xb7 Python \xc2\xb7 Pyodide"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/christmas-tree-studio"),
         .thumb = CLAY_STRING_CONST("/clay/images/Christmas_Tree_Studio.png"),
@@ -159,7 +159,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2025"),
         .title = CLAY_STRING_CONST("Racket-ish Compiler"),
-        .desc = CLAY_STRING_CONST("A nanopass compiler translating a subset of Racket to x86-64, with higher-order functions, lexical scoping, macros and dynamic type checking. Graph-coloring register allocation cut generated code 83% and ran 10x faster."),
+        .desc = CLAY_STRING_CONST("A nanopass compiler translating a subset of Racket to x86-64, with higher-order functions, lexical scoping, macros and dynamic type checking. Graph-coloring register allocation and redundancy elimination cut generated code 83%, from 120K to 20K lines, and ran 10x faster."),
         .stack = CLAY_STRING_CONST("Racket \xc2\xb7 x86-64 \xc2\xb7 RackUnit"),
         .thumb = CLAY_STRING_CONST("/clay/images/racket_compiler.png"),
         // no .url — closed source, so no repo link
@@ -168,7 +168,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2024"),
         .title = CLAY_STRING_CONST("Course Planning Application"),
-        .desc = CLAY_STRING_CONST("A multi-semester planner for optimizing course schedules and tracking degree progress, with a Swing interface for interaction and JSON files for persistence."),
+        .desc = CLAY_STRING_CONST("A multi-semester planner for optimizing course schedules and tracking degree progress, with a Swing interface for interaction and JSON files for persistence. Courses are tracked by term with completion status and grades, and credit totals roll up across the plan."),
         .stack = CLAY_STRING_CONST("Java \xc2\xb7 Swing \xc2\xb7 JUnit"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/CoursePlanningApp"),
         .thumb = CLAY_STRING_CONST("/clay/images/Course_Plan_App.png"),
@@ -178,7 +178,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2024"),
         .title = CLAY_STRING_CONST("HackMatch (nwPlus HackCamp 2024)"),
-        .desc = CLAY_STRING_CONST("A hackathon front end pairing engineers with complementary collaborators, built as an interactive UI that filters and matches on technical expertise."),
+        .desc = CLAY_STRING_CONST("A hackathon front end pairing engineers with complementary collaborators, built as an interactive UI that filters and matches on technical expertise. Profiles surface each developer's recent GitHub activity through the GitHub API."),
         .stack = CLAY_STRING_CONST("JavaScript \xc2\xb7 HTML \xc2\xb7 CSS"),
         .url = CLAY_STRING_CONST("https://devpost.com/software/hackmatch-v3tlq8"),
         .thumb = CLAY_STRING_CONST("/clay/images/Hack_Match.png"),
@@ -188,7 +188,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2023"),
         .title = CLAY_STRING_CONST("Mini B+ Tree Database"),
-        .desc = CLAY_STRING_CONST("A small runtime database exposing CRUD over a hand-rolled B+ tree, holding O(log n) lookups and fast range scans under a tight memory budget."),
+        .desc = CLAY_STRING_CONST("A small runtime database exposing CRUD over a hand-rolled B+ tree, holding O(log n) lookups and fast range scans under a tight memory budget. Nodes are managed with raw pointers rather than smart pointers, as deliberate practice in manual memory management."),
         .stack = CLAY_STRING_CONST("C++ \xc2\xb7 GoogleTest"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/BPlusTreeDBMS"),
         .thumb = CLAY_STRING_CONST("/clay/images/bplus_tree.png"),
@@ -197,7 +197,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2023"),
         .title = CLAY_STRING_CONST("RSA Algorithm Exploration"),
-        .desc = CLAY_STRING_CONST("RSA implemented from scratch \xe2\x80\x94 prime generation, modular exponentiation and key management \xe2\x80\x94 then benchmarked for security and speed across key sizes."),
+        .desc = CLAY_STRING_CONST("RSA implemented from scratch \xe2\x80\x94 prime generation, modular exponentiation and key management \xe2\x80\x94 then benchmarked for security and speed across key sizes. Small keys and per-character encryption leave it breakable, shown by factoring n with Pollard's rho and by a cipher-to-glyph lookup that never needs the private key."),
         .stack = CLAY_STRING_CONST("Python \xc2\xb7 Jupyter Notebook"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/RSA-Algo-Exploration"),
         .thumb = CLAY_STRING_CONST("/clay/images/rsa.png"),
@@ -223,7 +223,7 @@ static const Experience EXPERIENCE[] = {
     {
         .period = CLAY_STRING_CONST("May 2026 \xe2\x80\x93 Dec 2026"),
         .role = CLAY_STRING_CONST("Junior Developer, Co-op"),
-        .desc = CLAY_STRING_CONST("Maintained 1,880+ Java and Selenium regression tests across staging and production, and automated coverage for three storage integrations \xe2\x80\x94 saving 8 hours of manual testing per sprint and surfacing bugs a week earlier."),
+        .desc = CLAY_STRING_CONST("Maintained 1,880+ Java and Selenium regression tests and automated 100+ more across GraphQL queries, UI flows and three storage integrations \xe2\x80\x94 saving 8 hours of manual testing per sprint. Stabilized flaky tests in GitLab CI to hold a 99.7% average pass rate, and refactored the framework around the Page Object Model."),
         .org = CLAY_STRING_CONST("QA Automation, Jostle"),
         .logoDusk = CLAY_STRING_CONST("/clay/images/jostle_dusk.png"),
         .logoPaper = CLAY_STRING_CONST("/clay/images/jostle_paper.png"),
@@ -232,7 +232,7 @@ static const Experience EXPERIENCE[] = {
     {
         .period = CLAY_STRING_CONST("2019 \xe2\x80\x93 2023"),
         .role = CLAY_STRING_CONST("Research Assistant"),
-        .desc = CLAY_STRING_CONST("Built Python tooling that extracts text and images from historical newspapers using BERT and YOLO, and automated quality control that improved digitization throughput 200%. Co-authored an IEEE PRAI 2023 paper."),
+        .desc = CLAY_STRING_CONST("Built Python tooling that extracts text and images from historical newspapers using BERT and YOLO, and automated quality checks for fold marks, color accuracy and other scanning defects that improved digitization throughput 200%. Co-authored an IEEE PRAI 2023 paper on assembling photo albums from historical newspapers with computer vision."),
         .org = CLAY_STRING_CONST("Digital Initiatives, The Chinese University of Hong Kong Library"),
         .url = CLAY_STRING_CONST("https://doi.org/10.1109/PRAI59366.2023.10332028"),
         .logoDusk = CLAY_STRING_CONST("/clay/images/cuhk_dusk.png"),
