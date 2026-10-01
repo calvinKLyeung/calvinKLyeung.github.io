@@ -141,7 +141,7 @@ static const Project PROJECTS[] = {
     {
         .year = CLAY_STRING_CONST("2026"),
         .title = CLAY_STRING_CONST("Personal Webpage in C"),
-        .desc = CLAY_STRING_CONST("This page. Laid out by Clay in C and compiled to WebAssembly \xe2\x80\x94 no HTML markup, no CSS and no framework; the browser only ever receives rectangles and text. Built on Clay's official website example and redeployed to GitHub Pages by GitHub Actions on every push."),
+        .desc = CLAY_STRING_CONST("This page. All content and layout are written in C with Clay, compiled by Clang straight to WebAssembly. Every frame, a JavaScript renderer adapted from Clay's example passes in the window size and pointer input, and Clay returns a fresh list of rectangles, text and images to draw."),
         .stack = CLAY_STRING_CONST("c \xc2\xb7 clay \xc2\xb7 wasm"),
         .url = CLAY_STRING_CONST("https://github.com/calvinKLyeung/calvinKLyeung.github.io"),
         .thumb = CLAY_STRING_CONST("/clay/images/self_in_c.png"),
