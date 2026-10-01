@@ -408,7 +408,7 @@ void FilterButton(uint32_t lang) {
 // never uses.
 // A row carries either a logo (experience) or a thumbnail (projects), never
 // both, so one aspect parameter serves whichever is present.
-void EntryRow(Clay_ElementId id, bool mobileScreen, Clay_String gutter, Clay_String title, Clay_String desc, Clay_String meta, Clay_String linkLabel, Clay_String url, Clay_String logo, float imageAspect, Clay_String thumb, int index) {
+void EntryRow(Clay_ElementId id, bool mobileScreen, Clay_String gutter, Clay_String title, Clay_String desc, Clay_String meta, Clay_String linkLabel, Clay_String linkIcon, Clay_String url, Clay_String logo, float imageAspect, Clay_String thumb, int index) {
     CLAY(id, {
         .layout = {
             .sizing = { CLAY_SIZING_GROW(0) },
@@ -465,11 +465,19 @@ void EntryRow(Clay_ElementId id, bool mobileScreen, Clay_String gutter, Clay_Str
                 }
                 if (linkLabel.length > 0) {
                     CLAY(CLAY_IDI("EntryLink", index), {
-                        .layout = { .padding = { 0, 0, 0, 2 } },
+                        .layout = { .childGap = 8, .childAlignment = { .y = CLAY_ALIGN_Y_CENTER }, .padding = { 0, 0, 0, 2 } },
                         .backgroundColor = T->bg,
                         .border = { .width = { .bottom = 1 }, .color = Clay_Hovered() ? T->madder : T->rule },
                         .userData = FrameAllocateCustomData((CustomHTMLData) { .link = url, .cursorPointer = true }),
                     }) {
+                        // Optional, matching the icon + label pairs in the header.
+                        if (linkIcon.length > 0) {
+                            CLAY(CLAY_IDI("EntryLinkIcon", index), {
+                                .layout = { .sizing = { CLAY_SIZING_FIXED(14) } },
+                                .aspectRatio = { 1 },
+                                .image = { .imageData = FrameAllocateString(linkIcon) },
+                            }) {}
+                        }
                         CLAY_TEXT(linkLabel, CLAY_TEXT_CONFIG({
                             .fontSize = FS_SMALL, .fontId = FONT_ID_MONO,
                             .textColor = Clay_Hovered() ? T->madder : T->textMuted,
@@ -548,7 +556,7 @@ void ProjectsSection(bool mobileScreen, float gap) {
             // Leave .url off a project (closed source, NDA, coursework) and
             // the repo link is omitted rather than rendered as a dead button.
             Clay_String repoLabel = p->url.length > 0 ? CLAY_STRING("repo") : (Clay_String) {};
-            EntryRow(CLAY_IDI("Project", i), mobileScreen, p->year, p->title, p->desc, p->stack, repoLabel, p->url, (Clay_String) {}, p->thumbAspect, p->thumb, (int)i);
+            EntryRow(CLAY_IDI("Project", i), mobileScreen, p->year, p->title, p->desc, p->stack, repoLabel, T->iconGithub, p->url, (Clay_String) {}, p->thumbAspect, p->thumb, (int)i);
         }
         if (shown == 0) {
             CLAY(CLAY_ID("ProjectsEmpty"), { .layout = { .padding = { 0, 0, 32, 32 } } }) {
@@ -568,7 +576,7 @@ void ExperienceSection(bool mobileScreen, float gap) {
             const Experience *e = &EXPERIENCE[i];
             Clay_String logo = THEME_INDEX == 0 ? e->logoDusk : e->logoPaper;
             Clay_String paperLabel = e->url.length > 0 ? CLAY_STRING("paper") : (Clay_String) {};
-            EntryRow(CLAY_IDI("Experience", i), mobileScreen, e->period, e->role, e->desc, e->org, paperLabel, e->url, logo, e->logoAspect, (Clay_String) {}, (int)(100 + i));
+            EntryRow(CLAY_IDI("Experience", i), mobileScreen, e->period, e->role, e->desc, e->org, paperLabel, (Clay_String) {}, e->url, logo, e->logoAspect, (Clay_String) {}, (int)(100 + i));
         }
     }
 }
